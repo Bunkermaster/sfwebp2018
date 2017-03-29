@@ -15,6 +15,11 @@ class StudentController extends Controller
      */
     public function indexAction(Request $request)
     {
+        $repo = $this->getDoctrine()
+            ->getRepository('HeticBundle:Student');
+        $bullshit = $repo->findAllStudentByDate();
+        dump($bullshit);
+        die();
         return $this->render('HeticBundle:Student:index.html.twig', [
             'request' => $request
         ]);

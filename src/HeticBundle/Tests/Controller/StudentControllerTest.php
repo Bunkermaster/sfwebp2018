@@ -10,7 +10,7 @@ class StudentControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $crawler = $client->request('GET', '/student');
+        $crawler = $client->request('GET', '/hetic/student');
     }
 
 }
