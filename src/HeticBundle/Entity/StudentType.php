@@ -32,6 +32,7 @@ class StudentType
      * @var \DateTime
      *
      * @ORM\Column(name="createdAt", type="datetime")
+     * @ORM\()
      */
     private $createdAt;
 
